@@ -21,12 +21,22 @@
 	},
 	"main": "./out/extension.js",
 	"contributes": {
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "calico-activitybar",
+					"title": "MEOW",
+					"icon": "src/meow.svg"
+				}
+			]
+		},
 		"views": {
-			"explorer": [
+			"calico-activitybar": [
 				{
 					"type": "webview",
 					"id": "calicoColors.colorsView",
-					"name": "Calico Colors"
+					"name": "Calico Colors",
+					"icon": "src/meow.svg"
 				}
 			]
 		},
